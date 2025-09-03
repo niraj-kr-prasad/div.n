@@ -37,7 +37,7 @@ for i = 1:length(selectedX)
     slope = dy / dx;
 
     % Define tangent line parameters
-    xRange = linspace(x(idx) - 1, x(idx) + 1, 100);  % Adjust the 1 for line length
+    xRange = linspace(x(idx) - 1, x(idx) + 0.1, 100);  % Adjust the 1 for line length
     yTangent = slope * (xRange - x(idx)) + y(idx);
 
     % Plot tangent line
